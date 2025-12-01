@@ -1,0 +1,6 @@
+@ProjetoMidasAPI_HostAddress = http://localhost:5212
+
+GET {{ProjetoMidasAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
