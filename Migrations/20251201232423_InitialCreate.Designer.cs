@@ -12,7 +12,7 @@ using ProjetoMidasAPI.Data;
 namespace ProjetoMidasAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251129075629_InitialCreate")]
+    [Migration("20251201232423_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />

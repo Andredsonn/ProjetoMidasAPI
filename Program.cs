@@ -36,6 +36,12 @@ internal partial class Program
                 };
             });
 
+            var jwtKey = builder.Configuration["Jwt:Key"];
+if (string.IsNullOrEmpty(jwtKey))
+{
+    throw new InvalidOperationException("Jwt:Key não configurado no appsettings.json");
+}
+
         builder.Services.AddAuthorization();
 
         var app = builder.Build();
